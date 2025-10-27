@@ -1,0 +1,51 @@
+<curato>
+  
+  <publicFacingPages>
+    <homepage url="/">
+      <header>
+        <logo link="/">
+          <onclick>
+            <target url="/" />
+          </onclick>
+        </logo>
+        <search>
+          <onSubmit>
+            <target url="/search" />
+          </onSubmit>
+        </search>
+        <signIn>
+          <visibility>only visible to user who not logged in 
+          </visibility>
+        </signIn>
+        <menu></menu>
+      </header>
+      
+      <collectionCardGrid>
+        <collectionCard>
+          
+        </collectionCard>
+      </collectionCardGrid>
+      <navigation></navigation>
+    </homepage>
+    
+    <collection url="/collection/{collectio_name_slug}-{hash_id}">
+      
+    </collection>
+    
+    <profile url="/curater/{displa_name_slug}-{hash_id}">
+      
+    </profile>
+  </publicFacingPages>
+  
+  <privatePages>
+    <myCollections url="/my/collections"></myCollections>
+    
+    <myCollection url="/my/collection/{collection_name_slug}-{hash_id}"></myCollection>
+    
+    <myBookmarks url="my/bookmarks"></myBookmarks>
+    
+    <myProfile url="my/profile"></myProfile>
+  </privatePages>
+  
+  
+</curato>

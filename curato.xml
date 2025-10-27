@@ -1,0 +1,56 @@
+<website name="curato">
+  
+  <publicFacingPages>
+    
+      <page route="/" title="Homepage">
+        
+        <section name="header">
+          <item route="/" name="logo">Curato</item>
+          <item name="search">
+            <event on="submit" route="/search" />
+          </item>
+          <item route="/auth">Sign In
+          </item>
+          <item name="menu" Title="Menu">
+            <item route="/logout">Logout
+            </item>
+          </item>
+        </section>
+        
+        <section name="collectionGrid">
+          <item route="/collection/{collection_name_slug}-{hash_id}" name="collectionCard" />
+        </section>
+        
+        <section name="mainNavigation">
+          <item route="/">Explore</item>
+          <item route="/my/collections">My Collections </item>
+          <item route="/my/bookmarks">My Bookmarks</item>
+          <item route="my/profile">My Profile</item>
+        </section>
+      </page>
+      
+      <page route="/collection/{collection_name_slug}-{hash_id}" title="Public Collection">
+        <section name="header"></section>
+        <section name=""></section>
+        <section name=""></section>
+        <section name=""></section>
+      </page>
+      
+      <page route="/curator/{displa_name_slug}-{hash_id}" title="Curator Profile"></page>
+      
+      <page route="/search" title="Search Page"></page>
+      
+  </publicFacingPages>
+
+  <privatePages>
+    
+     <page route="/my/collections" title="My Collections"></page>
+     
+     <page route="/my/collection/{collection_name_slug}-{hash_id}" title="My Collection"></page>
+     
+     <page route="/my/bookmarks" title="My Bookmarks"></page>
+     
+     <page route="my/profile" title="My Profile"></page>
+     
+  </privatePages>
+</website>
